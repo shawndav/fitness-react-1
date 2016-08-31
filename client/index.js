@@ -5,6 +5,9 @@ import App from './components/App';
 import Home from './components/Home';
 import About from './components/About';
 import Faq from './components/Faq';
+import Register from './components/Register';
+import Login from './components/Login';
+import Logout from './components/Logout';
 
 import React from 'react';
 import { render } from 'react-dom';
@@ -16,6 +19,9 @@ render(
       <IndexRoute component={Home} />
       <Route path="about" component={About} />
       <Route path="faq" component={Faq} />
+      <Route path="register" component={Register} />
+      <Route path="login" component={Login} />
+      <Route path="logout" component={Logout} />
     </Route>
   </Router>
   , document.getElementById('root'));

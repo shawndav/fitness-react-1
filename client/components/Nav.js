@@ -13,7 +13,7 @@ export default () => (
           <span className="icon-bar" />
           <span className="icon-bar" />
         </button>
-        <a className="navbar-brand" href="#">ChangeMe</a>
+        <a className="navbar-brand" href="#">Fitness</a>
       </div>
 
       <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -22,6 +22,9 @@ export default () => (
           <li><Link to="/"><i className="fa fa-home fa-fw" /> Home</Link></li>
           <li><Link to="/about"><i className="fa fa-hashtag fa-fw" /> About</Link></li>
           <li><Link to="/faq"><i className="fa fa-question-circle-o fa-fw" /> Faq</Link></li>
+          <li><Link to="/register"><i className="fa fa-user fa-fw" /> Register</Link></li>
+          <li><Link to="/login"><i className="fa fa-key fa-lock" /> Login</Link></li>
+          <li><Link to="/logout"><i className="fa fa-key fa-unlock" /> Logout</Link></li>
         </ul>
       </div>
     </div>
