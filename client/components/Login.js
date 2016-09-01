@@ -1,5 +1,5 @@
 /* eslint-disable max-len, arrow-body-style, no-underscore-dangle, react/no-string-refs, react/self-closing-comp */
-/* global localStorage */
+/* global localStorage, window, Event */
 
 import React from 'react';
 import axios from 'axios';
@@ -20,6 +20,7 @@ export default class Login extends React.Component {
       localStorage.clear();
       localStorage.setItem('token', res.headers.authorization);
       browserHistory.push('/');
+      window.dispatchEvent(new Event('login'));
     })
     .catch(() => {
       // notify user login failed

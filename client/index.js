@@ -7,8 +7,8 @@ import About from './components/About';
 import Faq from './components/Faq';
 import Register from './components/Register';
 import Login from './components/Login';
-import Logout from './components/Logout';
 import Profile from './components/Profile';
+import Exercises from './components/Exercises';
 
 import React from 'react';
 import { render } from 'react-dom';
@@ -22,8 +22,8 @@ render(
       <Route path="faq" component={Faq} />
       <Route path="register" component={Register} />
       <Route path="login" component={Login} />
-      <Route path="logout" component={Logout} />
       <Route path="profile" component={Profile} />
+      <Route path="exercises" component={Exercises} />
     </Route>
   </Router>
   , document.getElementById('root'));
