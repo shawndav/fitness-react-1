@@ -8,11 +8,10 @@ import axios from 'axios';
 export default class Nav extends React.Component {
   constructor(props) {
     super(props);
-    const authorization = localStorage.getItem('token');
     this.credentials = this.credentials.bind(this);
     this.logout = this.logout.bind(this);
     this.listen = this.listen.bind(this);
-    this.state = { active: false, authorization, user: { } };
+    this.state = { active: false, user: { } };
   }
 
   componentDidMount() {
@@ -27,7 +26,8 @@ export default class Nav extends React.Component {
   }
 
   credentials() {
-    axios.get('http://localhost:9001/api/users/credentials', { headers: { authorization: this.state.authorization } })
+    const authorization = localStorage.getItem('token');
+    axios.get('http://localhost:9001/api/users/credentials', { headers: { authorization } })
     .then(res => {
       this.setState({ user: res.data, active: true });
     }).catch(() => {
