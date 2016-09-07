@@ -71,6 +71,7 @@ export default class Nav extends React.Component {
               <li><Link to="/"><i className="fa fa-home fa-fw" /> Home</Link></li>
               <li><Link to="/about"><i className="fa fa-hashtag fa-fw" /> About</Link></li>
               <li><Link to="/faq"><i className="fa fa-question-circle-o fa-fw" /> Faq</Link></li>
+              <li><Link to="/devices"><i className="fa fa-question-circle-o fa-fw" /> Devices</Link></li>
               { links }
             </ul>
           </div>
